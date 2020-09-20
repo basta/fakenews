@@ -6,11 +6,11 @@ truedata = {}
 fakedata = {}
 
 #Load data
-for line in open("bpkratios.txt").readlines():
+for line in open("fakeratios.txt").readlines():
     line = line.split() 
     fakedata[line[0]] = float(line[1])
 
-for line in open("idnesratios.txt").readlines():
+for line in open("trueratios.txt").readlines():
     line = line.split() 
     truedata[line[0]] = float(line[1])
 

@@ -1,12 +1,4 @@
 what = "idnes"
-
-if what == "idnes":
-    f = open("idnes.txt")
-    o = open("idnesfreq.txt", "w+")
-elif what == "bpk":
-    f = open("bpk.txt")
-    o = open("bpkfreq.txt", "w+")
-
 words = {}
 
 def cleanup(s: str):
@@ -25,6 +17,13 @@ def cleanup(s: str):
     return s
 
 if __name__ == "__main__":
+    if what == "idnes":
+        f = open("idnes.txt")
+        o = open("idnesfreq.txt", "w+")
+    elif what == "bpk":
+        f = open("bpk.txt")
+        o = open("bpkfreq.txt", "w+")
+
     while True:
         line = f.readline()
         if line == "":

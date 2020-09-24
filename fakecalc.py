@@ -14,9 +14,7 @@ def fakecalc(text):
     try:
         return trueval / (fakeval + trueval)
     except ZeroDivisionError:
-        print("Trueval:", trueval)
-        print("Fakeval:", fakeval)
-        return 1
+        return 0
         
 def text_from_html(html):
     soup = BeautifulSoup(html)
